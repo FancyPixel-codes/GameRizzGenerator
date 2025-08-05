@@ -1,0 +1,129 @@
+/* Siege Specific Styles */
+body {
+    background-image: url('https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/30ZUoiL7KrSHJKukKJHZcV/dd911112249759021bc8dea6e7be6108/SiegeX_thumbnail.jpg');
+    /* background-image: url('https://pbs.twimg.com/media/GlRp-1GXIAAOna_?format=jpg&name=4096x4096'); */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.container {
+    max-width: 800px;
+    width: 90%;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(20, 20, 30, 0.9);
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    border: 1px solid #2a2835;
+}
+
+.selector {
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+}
+
+select {
+    padding: 12px 40px 12px 20px;
+    font-size: 1.1rem;
+    background-color: #2a2835;
+    color: white;
+    border: 2px solid #d71921;
+    border-radius: 3px;
+    width: 100%;
+    appearance: none;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.selector::after {
+    content: "▼";
+    font-size: 0.8rem;
+    color: #d71921;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+button {
+    background: linear-gradient(to bottom, #d71921, #a8141a);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 0 #6e0e12, 0 5px 10px rgba(0,0,0,0.3);
+}
+
+button:hover {
+    background: linear-gradient(to bottom, #e51e27, #b8161c);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 #6e0e12, 0 8px 15px rgba(215, 25, 33, 0.4);
+}
+
+button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 0 #6e0e12, 0 3px 5px rgba(0,0,0,0.3);
+}
+
+.result {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: rgba(42, 40, 53, 0.7);
+    border-left: 4px solid #d71921;
+    border-radius: 3px;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pickup-line {
+    font-size: 1.3rem;
+    font-style: italic;
+    line-height: 1.5;
+    font-family: 'Ubuntu', sans-serif;
+    color: #f0f0f0;
+}
+
+.logo {
+    font-weight: bold;
+    color: #d71921;
+}
+
+.back-button {
+    position: absolute;
+    left: 20px;
+    color: #d71921;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+        padding: 0 40px;
+    }
+    
+    .container {
+        padding: 20px;
+    }
+    
+    .pickup-line {
+        font-size: 1.1rem;
+    }
+}
